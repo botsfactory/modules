@@ -1,0 +1,58 @@
+{
+  "name": "@botsfactory/modules",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "./node_modules/.bin/jest",
+    "postversion": "git push && git push --tags"
+  },
+  "bin": {
+    "luis2watson": "./bin/luis2watson.js"
+  },
+  "author": "The Bot Makers",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^20.0.2",
+    "async": "^2.1.5",
+    "body-parser": "^1.16.1",
+    "botbuilder": "^3.8.4",
+    "botframework-watson-recognizer": "^1.0.0",
+    "cmd-exec": "^0.1.0",
+    "dashbot": "^0.8.4",
+    "del": "^2.2.2",
+    "entities": "^1.1.1",
+    "express": "^4.14.1",
+    "geodesy": "^1.1.1",
+    "global": "^4.3.2",
+    "har-schema": "^2.0.0",
+    "jest-cli": "^20.0.4",
+    "lazy.js": "^0.5.0",
+    "mongodb": "^2.2.22",
+    "mongoose": "^4.10.8",
+    "node-fetch": "^1.6.3",
+    "node-geocoder": "^3.16.0",
+    "nodemailer": "^3.1.5",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.3",
+    "restify": "^4.3.0",
+    "rollbar": "^2.0.4",
+    "shell": "^0.3.2",
+    "uuid": "^3.0.1"
+  },
+  "jest": {
+    "testRegex": "(tests/.*[.](test|tests|spec))[.](js)$",
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "supertest": "^3.0.0"
+  },
+  "engines": {
+    "node": "^8.1.2"
+  }
+}
