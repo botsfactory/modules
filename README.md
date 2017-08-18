@@ -1,33 +1,23 @@
 # Bots Factory - Modules
-
 This is the source for BotsFactory by The Bot Makers
-
-
 ## Modules
-
-Connie is made of multiple optional modules (except the Users module), each adding a specific functionality to your bot.
-
+**bots**factory is made of multiple optional modules (except the Users module), each adding a specific functionality to your bot.
 ### Analitycs
-
 Let's you connect with Dashbot 
-
-### Botframework
-
-Utils to ease development with Misocroft's BotFramework
-
+### Microsoft Bot Framework
+All the module integrate with Microsoft Bot Framework to ease development
 ### Conversation
-
 Saves messages exchanged between your users and your bot.
-
 ### Proactive
-
 Let's you define multiple types of proactive messages scheduled, manual, triggered by other integrations, etc.
-
-
+### FAQ
+Adds a connection from your QnAMaker to your bot.
+### i18n
+Enables multi-language chatbots with switch language option
+### Log Errors
+Enables error logs with Rollbar for when something goes wrong.
 #### POST
-
 `/api/proactive/:id`
-
 Executes a proactive handler of `id`, to all user that satisfy `query`.
 ```json
 {
@@ -37,11 +27,8 @@ Executes a proactive handler of `id`, to all user that satisfy `query`.
     "argn": {}
 }
 ```
-
 `/api/proactive/sendmessage`
-
 Sends a message to all the users, that satisfy `query`
-
 ```json
 {
     "query": {},
@@ -49,12 +36,8 @@ Sends a message to all the users, that satisfy `query`
     "text": "message text"
 }
 ```
-
-
 `/api/proactive/beginDialog`
-
 Starts a dialog with `dialogId` to all the users that satisfy `query`
-
 ```json
 {
     "query": {},
@@ -62,11 +45,6 @@ Starts a dialog with `dialogId` to all the users that satisfy `query`
     "dialogId": "/askSign"
 }
 ```
-
 ### Users
-
-Autmatically lodas custom user info from their channels. and lets you link multiple accounts.
-
-
+Autmatically loads custom user info from their channels and lets you link multiple accounts.
 ## UNDER HEAVY DEVELOPMENT
-
