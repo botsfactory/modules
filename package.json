@@ -14,11 +14,11 @@
   "author": "The Bot Makers",
   "license": "ISC",
   "dependencies": {
+    "@botsfactory/botframework-watson-recognizer": "0.0.2",
     "@types/jest": "^20.0.2",
     "async": "^2.1.5",
     "body-parser": "^1.16.1",
     "botbuilder": "^3.8.4",
-    "botframework-watson-recognizer": "^1.0.0",
     "cmd-exec": "^0.1.0",
     "dashbot": "^0.8.4",
     "del": "^2.2.2",
